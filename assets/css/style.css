@@ -1,0 +1,18 @@
+.main{
+    min-height: 80vh;
+}
+.super_container{
+    background-color: whitesmoke;
+}
+.heightNavbar{
+    height: 80px;
+}
+.heightNavbar a{
+    color: black;
+}
+body{
+    font-family: 'Goldman', cursive;
+}
+.cardText{
+    font-weight: bolder;
+}
