@@ -40,17 +40,19 @@
                      
                             </ul>
                           </div>
-                        </nav>
+                        
                       <div class="ml-auto">
-                        <form class="search">
-                          <div class="search__wrapper">
-                            <input type="text" name="" placeholder="Search for..." class="search__field">
-                            <button type="submit" class="fas fa-search search__icon"></button>
-                          </div>
-                        </form>
+                        <div id="wrap">
+                          <form action="/search" autocomplete="on">
+                          <input id="search" name="search" type="text" placeholder="Search..."><input id="search_submit" class="fas fa-search" value="Rechercher" type="submit">
+                          </form>
+                        </div>
                       </div>
-                      <a type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-user ml-4" aria-hidden="true"></i></a>
+                   
+                      <a type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-user" aria-hidden="true"></i></a>
+                    </nav>
                   </div>
+
               </div>
           </div>
       </div>
