@@ -1,5 +1,7 @@
-.register{
+body{
     background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+.register{
     margin-top: 3%;
     padding: 3%;
 }
@@ -8,17 +10,27 @@
     color: #fff;
     margin-top: 4%;
 }
-.register-left input{
+.register-left button{
     border: none;
     border-radius: 1.5rem;
-    padding: 2%;
-    width: 60%;
+    width: 100px;
     background: #f8f9fa;
     font-weight: bold;
     color: #383d41;
     margin-bottom: 3%;
     cursor: pointer;
 }
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    width: 100%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
 .register-right{
     background: #f8f9fa;
     border-top-left-radius: 10% 50%;

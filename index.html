@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/register.css">
 </head>
 <body>
     <!-- header and navbar -->
@@ -43,9 +42,14 @@
                           </div>
                         </nav>
                       <div class="ml-auto">
-                          <i class="fas fa-search mr-3" aria-hidden="true"></i>
-                          <a type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-user ml-4" aria-hidden="true"></i></a>
+                        <form class="search">
+                          <div class="search__wrapper">
+                            <input type="text" name="" placeholder="Search for..." class="search__field">
+                            <button type="submit" class="fas fa-search search__icon"></button>
+                          </div>
+                        </form>
                       </div>
+                      <a type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-user ml-4" aria-hidden="true"></i></a>
                   </div>
               </div>
           </div>
@@ -107,115 +111,6 @@
       <strong id="dateNow"></strong>
     </div>
   </footer>
-
-
-  <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog-xl">
-
-    <!-- Modal content-->
-  <div class="model-content"> 
-    <div class="modal-body">
-        <div class="container register">
-            <div class="row">
-                <div class="col-md-3 register-left">
-                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
-                    <h3>Welcome</h3>
-                    <p>Download your Notes and Question Banks</p>
-                    <input type="submit" name="" value="Login"/>
-                </div>
-                <div class="col-md-9 register-right">
-                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Student</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Teacher</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3 class="register-heading">Apply as a Student</h3>
-                            <div class="row register-form">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="First Name *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Last Name *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option class="hidden"  selected disabled>Select your Course</option>
-                                            <option>BE-IT</option>
-                                            <option>BE-Civil</option>
-                                            <option>BE-Computer</option>
-                                            <option>BE-ELX</option>
-                                        </select>
-                                    </div>
-                                    <input type="submit" class="btnRegister"  value="Register"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <h3  class="register-heading">Apply as a Teacher</h3>
-                            <div class="row register-form">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="First Name *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Last Name *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option class="hidden"  selected disabled>Select your Subject</option>
-                                            <option>ECI</option>
-                                            <option>Maths</option>
-                                            <option>DBS</option>
-                                        </select>
-                                    </div>
-                                    <input type="submit" class="btnRegister"  value="Register" method="post">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-      </div>
-  </div>
-</div>
-</div>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/mystyle.js"></script>
