@@ -74,3 +74,25 @@ body{
   input[type="submit"]:hover {
     opacity: 0.8;
   }
+
+  .circleImg {
+
+    border-radius: 50%;
+    border: 2px solid cyan;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+
+  }
+  .Customcard{
+    position: relative;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-direction: column;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-color: #fff;
+background-clip: border-box;
+border-radius: .25rem;
+  }
