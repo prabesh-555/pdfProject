@@ -13,6 +13,12 @@
 body{
     font-family: 'Goldman', cursive;
 }
+.customTextOnImage{
+   margin-top: 35%;
+   color: aliceblue; /*image ko bicha ko text ko color lai yeha color change gar  */
+   font-weight: bold;
+   font-size: xx-large;
+ }
 .cardText{
     font-weight: bolder;
 }
@@ -95,4 +101,4 @@ word-wrap: break-word;
 background-color: #fff;
 background-clip: border-box;
 border-radius: .25rem;
-  }
+}
