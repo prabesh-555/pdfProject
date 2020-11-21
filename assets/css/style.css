@@ -46,6 +46,12 @@ border-radius: .25rem;
 body{
     font-family: 'Goldman', cursive;
 }
+.customTextOnImage{
+   margin-top: 35%;
+   color: aliceblue; /*image ko bicha ko text ko color lai yeha color change gar  */
+   font-weight: bold;
+   font-size: xx-large;
+ }
 .cardText{
     font-weight: bolder;
 }
@@ -104,6 +110,7 @@ input[type="submit"] {
   transition: opacity .4s ease;
 }
 
+<<<<<<< HEAD
 input[type="submit"]:hover {
   opacity: 0.8;
 }
@@ -113,4 +120,18 @@ background-color: black;
 footer strong{
   color:white;
 
+=======
+  }
+  .Customcard{
+    position: relative;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-direction: column;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-color: #fff;
+background-clip: border-box;
+border-radius: .25rem;
+>>>>>>> fc0241fe1c04597fdb5ad76db8952ee55f9d8d21
 }
