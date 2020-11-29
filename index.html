@@ -7,64 +7,52 @@
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/notes.css">
 </head>
-<body>
+  <body >
     <!-- header and navbar -->
 
     <header class="super_container sticky-top">
       <div class="container">
-          <div class="row">
-              <div class="col">
-                  <div class="heightNavbar d-flex flex-row align-items-center justify-content-center">
-                      <div class="mr-auto">
-                          ER Drive Notes
-                      </div>
-                      <nav class="navbar navbar-expand-lg">
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav navcustom">
-                              <li class="nav-item mx-1 active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="nav-item  mx-1">
-                                  <a class="nav-link" href="#">Notes</a>
-                                </li>
-                              <li class="nav-item  mx-1">
-                                <a class="nav-link" href="#">Question Bank</a>
-                              </li>
-                              <li class="nav-item  mx-1">
-                                <a class="nav-link" href="#">About Us</a>
-                              </li>
-                     
-                            </ul>
-                          </div>
-                        </nav>
-                      <div class="ml-auto">
-                        <div id="wrap">
-                          <form action="/search" autocomplete="on">
-                          <input id="search" name="search" type="text" placeholder="Search..."><input id="search_submit" class="fas fa-search" value="Rechercher" type="submit">
-                          </form>
-                        </div>
-                      </div>
-                   
-                      <a type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-user" aria-hidden="true"></i></a>
-                      
-                  </div>
-
-              </div>
+        <nav class=" heightNavbar navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">ER Drive Notes</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item  mx-1">
+                <a class="nav-link" href="#">Notes</a>
+              </li>
+            <li class="nav-item  mx-1">
+              <a class="nav-link" href="#">Question Bank</a>
+            </li>
+            <li class="nav-item  mx-1">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 d-none" id="search" type="search" placeholder="Search" aria-label="Search">
+                <button onmouseover="hideSearchBox()" class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              <a type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-user" aria-hidden="true"></i></a>
           </div>
+        </nav>
       </div>
     </header>
-  <div class="main">
+
+  <div class="main" onmouseover="HideSearchBox()">
     <div class="container">
       <div class="card p-0 img-fluid border-0 ">
-        <img class="card-img-top " src="assets/img/book.jpg">
-        <div class="card-img-overlay p-0">
-          <div class="pl-4 text-center">
-            <p class="customTextOnImage">Edit this for graphics</p>
-            <button class="btn btn-primary customButton">Insider</button>
+        <img class="card-img-top " src="assets/img/sharon-mccutcheon-eMP4sYPJ9x0-unsplash.jpg">
+        <div class="card-img-overlay">
+          <div class="pl-3 text-center">
+            <p class="customTextOnImage">Learn and Download</p>
+            <button class="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
@@ -195,6 +183,7 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/mystyle.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/69abd925db.js" crossorigin="anonymous"></script>
 </body>
 </html>
