@@ -1,3 +1,7 @@
  ul li{
     color: black;
 }
+
+.marginright{
+    margin-right: auto!important;
+}
