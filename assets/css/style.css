@@ -95,3 +95,6 @@ footer strong{
   background-clip: border-box;
   border-radius: .25rem;
 }
+.footerColor{
+  color: #fff;
+}
