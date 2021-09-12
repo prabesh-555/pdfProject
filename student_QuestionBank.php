@@ -8,44 +8,54 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/notes.css">
-    
+    <link rel="stylesheet"href="./assets/css/button.css">
 </head>
 </head>
   <body >
     <!-- header and navbar -->
 
     <header class="super_container sticky-top">
-      <div class="container">
-        <nav class=" heightNavbar navbar navbar-expand-md navbar-light">
-          <a class="navbar-brand" href="#">ER Drive Notes</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link" href="#">Notes</a>
-              </li>
+    <div class="container">
+      <nav class=" heightNavbar navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">ER Drive Notes</a>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item ">
+              <a class="nav-link" href="student_index.php" > Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item  mx-1">
+              <a class="nav-link" href="student_notes.php" >Notes</a>
+            </li>
             <li class="nav-item active mx-1">
-              <a class="nav-link" href="#">Question Bank</a>
+              <a class="nav-link" href="student_QuestionBank.php" >Question Bank</a>
             </li>
             <li class="nav-item  mx-1">
               <a class="nav-link" href="#">About Us</a>
             </li>
-            </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 d-none" id="search" type="search" placeholder="Search" aria-label="Search">
-                <button onmouseover="hideSearchBox()" class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-              </form>
-              <a type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-user" aria-hidden="true"></i></a>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 d-none" id="search" type="search" placeholder="Search"
+              aria-label="Search">
+            <button onmouseover="hideSearchBox()" class="btn my-2 my-sm-0" type="submit"><i
+                class="fas fa-search"></i></button>
+        </div>
+        </form>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-user-circle fa-1x"></i></button>
+          <div class="dropdown-content">
+            <a href="#">My profile</a>
+            <a href="upload_student.php">Upload a file</a>
+            <a href="#">Settings</a>
+            <a href="index.php">Logout</a>
           </div>
-        </nav>
-      </div>
-    </header>
+        </div>
+
+    </div>
+    </nav>
+    </div>
+  </header>
     <div class="main">
     <div class="container">
       <div class="row text-center py-4">

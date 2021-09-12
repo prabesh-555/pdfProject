@@ -21,27 +21,34 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item  mx-1">
-                <a class="nav-link" href="#">Notes</a>
+                <a class="nav-link" href="notes.php">Notes</a>
               </li>
-            <li class="nav-item  mx-1">
-              <a class="nav-link" href="#">Question Bank</a>
-            </li>
-            <li class="nav-item  mx-1">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            </ul>
+               <li class="nav-item  mx-1">
+                 <a class="nav-link" href="QuestionBank.php">Question Bank</a>
+              </li>
+               <li class="nav-item  mx-1">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+             </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2 d-none" id="search" type="search" placeholder="Search" aria-label="Search">
                 <button onmouseover="hideSearchBox()" class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
               </form>
-              <a type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-user" aria-hidden="true"></i></a>
+           <div class="dropdown">
+              <button type="button" class="btn" data-toggle="dropdown">  
+              <i class="fas fa-user"  aria-hidden="true"></i>
+              </button>  
+             <div class="dropdown-menu">  
+                <a class="dropdown-item" href="teacher.php"> <i class="fas fa-user mr-2"  aria-hidden="true"></i>Log-in/Sign-in as Teacher </a>  
+                <a class="dropdown-item" href="student.php"> <i class="fas fa-user mr-2"  aria-hidden="true"></i>Log-in/Sign-in as Student </a>  
+             </div>  
           </div>
         </nav>
       </div>
-    </header>
+   </header>
 
   <div class="main" onmouseover="HideSearchBox()">
     <div class="container">
